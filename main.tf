@@ -56,7 +56,7 @@ resource "aws_security_group_rule" "web_https_inbound" {
   security_group_id = aws_security_group.web.id
 }
 
-resource "aws_security_group_rule" "web_http/s_outbound" {
+resource "aws_security_group_rule" "web_everything_outbound" {
   type        = "egress"
   from_port   = 0
   to_port     = 0
